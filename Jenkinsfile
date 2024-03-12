@@ -19,3 +19,13 @@ pipeline {
         }
     }
 }
+
+post {
+         always{
+            
+            echo "I will always run whether job is success or not"
+         }
+         success{
+            echo " I will run the failre"
+         }
+}
