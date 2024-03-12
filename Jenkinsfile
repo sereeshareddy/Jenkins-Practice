@@ -1,4 +1,5 @@
 pipeline {
+    agnet { node { label 'AGENT-1'} }
     agent any 
     stages {
         stage('Build') { 
