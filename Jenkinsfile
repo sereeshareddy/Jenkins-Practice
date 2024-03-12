@@ -1,22 +1,20 @@
 pipeline {
-    agnet { node { label 'AGENT-1'} }
     agent any 
     stages {
         stage('Build') { 
             steps {
-                 echo 'Building..'
+                echo 'Build Success..'
             }
         }
         stage('Test') { 
             steps {
-                echo 'Testing..'
+                echo 'Test Success..' 
             }
         }
         stage('Deploy') { 
             steps {
-                echo 'Deploying..'
+                echo 'Deploy Success..' 
             }
         }
     }
 }
-
